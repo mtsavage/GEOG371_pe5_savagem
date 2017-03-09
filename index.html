@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Local Biking Resources</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta data for sharing links on Facebook-->
+    <meta property="og:title" content="The major cities in Oregon" />
+    <meta property="og:url" content="http://cdn.rawgit.com/jakobzhao/storymap/master/index.html" />
+    <meta property="og:description" content="This is an example of map story." />
+    <meta property="og:image" content="img/social.png" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+    <!--facebook and info icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--use a better font for this web map-->
+    <link href='http://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Diplomata+SC|Griffy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="css/storymap.css">
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!--add required libraries-->
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--story map plugin-->
+    <script src="js/storymap.js"></script>
+
+    <  <!-- bing map -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
+    <script src="http://gmaclennan.github.io/leaflet-bing-layer/leaflet-bing-layer.js"></script>
+
+    <!-- mini globle map -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="js/globeminimap.js"></script>
+
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 main">
+            <h2 class="page-header">Your Local Biking Resources <br/>
+                <small style="font-size:12pt">Madeleine Savage, savagem@oregonstate.edu, Oregon State University</small></h2>
+            <section data-scene="overview">
+                <p> New to Corvallis? Love to Bike? You are in the right place! Here are some good resources for all things related to biking, from buying a new bike, where to get lights, or to get fixes and tune ups. Corvallis is also home to an extremely vibrant bicycling community!</p>
+                <img src="img/Corvallis.jpg" class="img-responsive" alt="responsive image" alt-text="corvallis oregon">
+            </section>
+
+            <section data-scene="portland">
+                <h2>Peak Sports Bicycle Shop</h2>
+                <img class="img-responsive img-border img-left" src="img/peaksports.jpg" alt="">
+                <br>
+                <p>Peak Sports specializes in supplying high-quality bicycles which include road, mountain, triathlon, hybrid, fitness, BMX and children’s bikes.
+                    They also carry cycling clothing and accessories in top brands such as Trek, Specialized, Felt, Kink, Santa Cruz and Salsa. Peak Sports is
+                    there to help you find the perfect products for your needs. They also have all gear needed for any of Triathlon goers.</p>
+                <p>207 NW 2nd Street Corvallis, OR 97330 </p>
+                <p>541.754.6444</p>
+                <p>Hours: Monday-Friday 10-6, Saturday 9-6, Sunday 11-5 </p>
+                <p> To learn more <a href="http://www.peaksportscorvallis.com/"> click here.</a></p>
+
+            </section>
+
+            <section data-scene="corvallis">
+                <h2>Bike N Hike</h2>
+                <img class="img-responsive img-border img-left" src="img/bikenhike.jpg" alt="">
+                <br>
+                <p>Bike N Hike offers a wide selection of road, mountain, commuter, and children’s bikes. They allow for test rides and help you
+                    find the perfect fit for you. Additionally, they provide a free “30 day” tune-up and free adjustments on all bearings, brakes,
+                    and gears for the first year. Even if you did not purchase your bike there,they provide great maintenance and bike repair services.
+                    They also offer other accessories such as helmets, locks, and lights.</p>
+                <p>401 SW 3rd Avenue Corvallis, OR 97333  </p>
+                <p>541.753.2912 </p>
+                <p>Hours: Monday - Saturday 9am - 6pm, Sunday 12 – 5</p>
+                <p> to learn more <a href=http://www.bikenhike.com/> click here. </a></p>
+            </section>
+
+                <section data-scene="eugene">
+                <h2>Cyclotopia</h2>
+                <img class="img-responsive img-border img-left" src="img/cyclotopia.jpg" alt="">
+                <p>Cyclotopia provides bike sales for many brands and types, as well as full service bicycle repair.
+                    They also have basic bike supplies and accessories, and they also will make special orders. Cyclotopia is
+                    also involved in many community services and host community cycling events.
+                </p>
+                <p>
+                    435 SW 2nd Street
+                    Corvallis, Oregon 97333
+                </p>
+                <p>541.757.9694</p>
+                <p>Hours: Monday-Friday 10-6, Saturday 10-6, Sunday 12-5 </p>
+                   <p> To learn more <a href=http://www.cyclotopia.com/> click here.</a>
+                </section> </p>
+
+            <section data-scene="salem">
+                <h2>Corvallis Bicycle Collective</h2>
+                <br>
+                <img class="img-responsive img-border img-left" src="img/bikecollective2.jpg" alt="">
+                <p>Corvallis Bike Collective is a used bike shop and repair shop which also provides classes and other community activities. They sell used and new parts, tools,
+                    and accessory as well as a selection of used bicycles. Some bicycles are "ready to ride," while others still need a little work.
+                    They also promote access to bicycles and support for cycling as a way of life, for example they have an Ask-A-Wrench booth at the Corvallis Farmer's Market.</p>
+                <p>707 NW 11th St.
+                    Corvallis, OR 97333
+                </p>
+                <p>541.224.6885 </p>
+                <p>Hours: Monday-Wednesday 12-4, Thursday-Sunday 12-6</p>
+                <p> To learn more <a href=http://corvallisbikes.org/> click here. </a>
+            </section></p>
+
+            <section data-scene="bend">
+
+
+                <h2>Dixon Rec Center</h2>
+                <img class="img-responsive img-border img-left" src="img/osubike.jpg" alt="">
+                <br>
+                <p>Are you a student at Oregon State Univeristy? The OSU Dixon Rec center has some great cycling resources. They provide some basic maintenance and tune up,
+                    such as flat tire repair, brake adjustments, gear adjustments and wheel truing. They also provide bike and gear rentals at low process for students.
+                </p>
+
+                <p>211 Dixon Recreation Center, Oregon State University,
+                    Corvallis, OR 97333
+                </p>
+                <p>541.737.3748 </p>
+                <p> To learn more <a href=http://recsports.oregonstate.edu/ali/outdoor-equipment-rental-bike-shop> click here.</a>
+            </section></p>
+
+                <section data-scene="oregon">
+
+                    <h2>More Resources</h2>
+                    <img class="img-responsive img-border img-left" src="img/bike1.jpg" alt="">
+                    <br>
+                    <p>Learn more about Corvallis and its biking programs
+                        at the <a href=http://www.corvallisoregon.gov/index.aspx?page=162> City of Corvallis</a> webpage. </p>
+
+                </section>
+
+
+            <!--add a arrow for scrolling down the texts-->
+            <div class="glyphicon glyphicon-menu-down glyphicon-align-center arrow-down"></div>
+        </div>
+        <!--map div-->
+        <div id="map" class="col-sm-6 col-md-8 sidebar"></div>
+
+    </div>
+    <!--facebook icon-->
+    <a class="fa fa-facebook-square btn" href="https://facebook.com/sharer.php?u=http://cdn.rawgit.com/jakobzhao/storymap/master/index.html" target="_blank"></a>
+    <!--info icon-->
+    <i class="fa fa-info-circle btn" style="top:50px" data-toggle="modal" data-target="#info-modal"></i>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is a web map of the City of Corvallis, OR and it shows some of the resources for those interested in bicycling.
+                        This story map library is derived from the storymap plugin for leaflet at
+                        <a>http://atlefren.github.io/storymap/</a>, and its functionality relies on both leaflet.</p>
+                    <p><b>storymap.js</b> | Released Date: 03/09/2017 | Version: 2.1 | MIT License </p>
+                    <p><b>Author: Madeleine Savage</b> | College of Earth, Ocean, Atmospheric Science | Oregon State University </p>
+                    <p>The context about each resource is compiled from each resources webpage,
+                        including <a>peaksportscorvallis.com</a>, <a>bikenhike.com</a>, <a>cyclotopia.com</a>,
+                    <a>corvallisbikes.org</a>, and <a>recsports.oregonstate.edu</a> </p>
+
+                    <p>The images for this story map were acquired from <a>images.google.com</a></p>
+                    <p>This story map uses geospatial data from mapbox, Google Earth Engine, Microsoft Bing map, Open Street Maps and Oregon Explorer.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main javascript -->
+<script type="text/javascript">
+    /**
+     * Created by jakob on 2/22/2017.
+     */
+
+// Create Legend Contents in html format
+  var county_legend ='<i style="background: black; opacity: 0.5"></i><p><b>Counties</b></p>';
+  var corvallis_admin_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Corvallis</b></p>';
+  var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
+
+    // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
+    // var layers = {
+    //      'layer1': [layer1, legend1]
+    //      'layer2': [layer2, legend2]
+    //      ...
+    // }
+
+    var layers = {
+        //'bing' : [L.tileLayer.bing('AuhiCJHlGzhg93IqUH_oCpl_-ZUrIE6SPftlyGYUvr9Amx5nzA-WqGcPquyFZl4L')],
+        'counties': [ L.geoJson.ajax('assets/counties.geojson',  {
+            color: 'black',
+            weight: 2,
+            opacity: 0.3}), county_legend],
+        //'points':[L.geoJson('assets/Bike_points.geojson')],
+        'corvallis admin': [L.geoJson.ajax('http://www.mapio.us/geoserver/ceoas/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ceoas:admin&outputFormat=application%2Fjson',          {
+            color: 'orange',
+            weight: 5}), corvallis_admin_legend],
+        'store': [L.geoJson.ajax('assets/Bike_points.geojson',{color: 'gray', wieght: 5}), county_legend ]
+
+    };
+
+    var scenes = {
+       //  overview: {lat: 44, lng: -123.5, zoom: 7, layers: ['forest cover 2010', 'counties']},
+        overview: {lat: 44.569360, lng: -123.29000, zoom: 13, layers: ['store']},
+        portland: {lat: 44.565226, lng: -123.26000, zoom: 18,layers: ['store']},
+        //need marker at 44.565226, -123.258919 Peak Sports
+        corvallis: {lat: 44.561166, lng: -123.262314, zoom: 18,layers: ['store']},
+        //need marker at 44.561166, -123.262314 Bike n HikeS
+        eugene: {lat: 44.560488, lng: -123.26200, zoom: 18, layers: ['store']},
+        //need marker at 44.560488, -123.261337 Cyclotopia
+        salem: {lat: 44.572321, lng: -123.266172, zoom: 18, layers: ['store']},
+        //need marker at 44.572321, -123.266172 Corvallis Bike COllective
+        bend: {lat: 44.563145, lng: -123.278671, zoom: 18, layers: ['store']},
+        //need marker at 44.563145, -123.278671 Dixon Rec Center
+
+        //mount_angel: {lat: 45.070144, lng: -122.800553, zoom: 15},
+       // oregon: {lat: 44, lng: -123.5, zoom: 7, layers: ['counties', 'forest cover 2010']}
+        oregon: {lat: 44, lng: -123.5, zoom: 7}
+    };
+
+    $('.main').storymap({
+        scenes: scenes,
+        layers: layers,
+        legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+        createMap: function () {
+            // create a map in the "map" div, set the view to a given place and zoom
+            var map = L.map('map', {zoomControl: false, scrollWheelZoom: false});
+
+            // add an base map, which can be either OSM, mapbox, tilelayer, wmslayer or those designed by yourself.
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 25,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            L.control.scale({position: 'bottomright', metric: false}).addTo(map);
+
+            // create a mini globe as the overview map control.
+           var miniMap = new L.Control.GlobeMiniMap({
+                marker:'red',
+                position: 'bottomright'
+            }).addTo(map);
+
+            return map;
+        }
+    });
+
+
+</script>
+</body>
+</html>
